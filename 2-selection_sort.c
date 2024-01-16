@@ -10,8 +10,8 @@
  */
 void selection_sort(int *arr, size_t size)
 {
-	size_t i, j;
-	int min, min_i;
+	size_t i, j, min_i;
+	int min;
 
 	for (i = 0; i < size - 1; i++)
 	{
