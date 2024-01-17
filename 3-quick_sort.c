@@ -1,5 +1,8 @@
 #include "sort.h"
 #include <stdio.h>
+
+#include "sort.h"
+#include <stdio.h>
 /**
  * quick_sort_helper - sorts by insertion method.
  * @array: array
@@ -30,12 +33,10 @@ void quick_sort_helper(int *array,
 				temp = array[i];
 				array[i] = array[j];
 				array[j] = temp;
+				print_array(original_array, original_size);
 			}
 		}
 	}
-
-	print_array(original_array, original_size);
-
 	quick_sort_helper(array, i, original_array, original_size);
 	quick_sort_helper(array + i + 1, size - i - 1, original_array, original_size);
 }
